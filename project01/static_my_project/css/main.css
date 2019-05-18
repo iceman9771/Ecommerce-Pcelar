@@ -1,0 +1,180 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://paperlief.com/images/bee-wallpaper-2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+h1{
+ color:#f5f5f5;;
+}
+h2{
+  color:#f5f5f5;;
+}
+h3{
+  color:#f5f5f5;
+}
+p{
+  color:#f5f5f5;
+}
+
+.work{
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+  max-height: 300px;
+  border-radius: 10px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+#products img{
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+#products img:hover{
+  opacity: 0.4;
+}
+
+.image-overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  margin-bottom: -100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background: rgb(147,147,147);
+  transition: margin 2s ease;
+}
+.work:hover .image-overlay{
+  margin-bottom: 0;
+}
+
+.image-text h3{
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #f5f5f5;
+}
+
+.image-overlay .fa{
+  font-size: 30px;
+  color: #2b98f0;
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 50%;
+  transition: transform 2s ease, background 2s ease;
+}
+
+.image-overlay .fa:hover{
+  transform: translateY(-10px);
+  background: #082238;
+}
+
+.description{
+  font-family: 'Playfair Display', serif;
+    max-width: 80ch;
+
+}
+
+.img-fluid{
+  max-height: 500px;
+  max-width: 400px;
+    border-radius: 10px;
+    margin-left: 20px;
+
+}
+#banner {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.banner-text h1 {
+  text-transform: uppercase;
+  color: #ffc914;
+  font-size: 60px;
+  font-style: italic;
+  text-decoration: underline;
+
+}
+.banner-text h3 {
+  text-transform: capitalize;
+  font-size: 30px;
+  margin: 10px 0;
+  color: #d9e5d6;
+}
+
+.banner-text a {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 25px;
+  padding: 10px;
+  color: #ffc914;
+  border: 3px solid #ffc914;
+  background: transparent;
+  transition: color 2s ease, background 2s ease;
+}
+
+.banner-text a:hover {
+  color: #2e282e;
+  background: #ffc914;
+}
+/*header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    color: white;
+}
+*/
+#billing-address{
+    align-items: center;
+}
+
+/*footer{
+  position:;
+  bottom:0;
+  text-align: center;
+  width: 100%;
+  height:180px;
+  background-image: url(http://4.bp.blogspot.com/-MyPe5dNzku8/Uq5E17ByhcI/AAAAAAAAA9o/KLdYAZ_3A88/s1600/MLADO-SACE.jpg);
+  background-size: 100%;
+}
+
+.footer-icons a{
+  display: inline-block;
+  font-size: 30px;
+  margin:0 18px 20px 10px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background: #f5f5f5;
+  color: #2e282e;
+}
+footer p{
+  color: #f5f5f5;
+  font-size: 20px;
+}
+
+nav{
+  background-image: url(http://4.bp.blogspot.com/-MyPe5dNzku8/Uq5E17ByhcI/AAAAAAAAA9o/KLdYAZ_3A88/s1600/MLADO-SACE.jpg);
+  background-size: 100%;
+}
+
+*/

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+<h1> Cart</h1>
+{% if  cart.products.exists %}
+
+<div class="table">
+<table style="width: 100%">
+  <tr>
+    <th class="product-name">Product</th>
+    <th class="product-price">Price</th>
+    <th class="product-removal"> </th>
+      <th class="product-qunatity"></th>
+  </tr>
+  {% for product in cart.products.all %}
+    <tr>
+    <td class="product-name">{{product.title}}</td>
+    <td class="product-price">{{product.price}}$</td>
+    <td class="product-removal">{% include 'carts/snippets/remove-product.html' with product_id=product.id %}</td>
+    <td class="prduct-qunatity"> {{ product.quantity }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+  <table style="width: 50%" align="right">
+    <tr>
+      <th>Subtotal</th>
+      <th>Tax</th>
+      <th>Total</th>
+    </tr>
+    <tr>
+      <td class="totals-value" id="cart-subtotal"><span class="cart-subtotal">{{ cart.subtotal }}$</span></td>
+      <td class="totals-value" id="cart-tax">5.99$</td>
+      <td class="totals-value" id="cart-total"><span class="cart-total">{{ cart.total }}$</span></td>
+    </tr>
+  </table>
+</div>
+   <a class="btn btn-lg btn-success" href="{% url 'cart:checkout' %} ">Checkout</a>
+
+<div class="cart-item-remove-form" style="display: none">
+  {% include 'carts/snippets/remove-product.html' %}
+</div>
+
+{% else %}
+<p class="lead">Cart is empty</p>
+{% endif %}
+
+{% endblock %}

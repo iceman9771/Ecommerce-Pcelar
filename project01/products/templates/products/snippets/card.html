@@ -1,0 +1,16 @@
+<div id="products" style="width: 20rem;">
+  <article class="work">
+      {% if instance.image %}
+      <a href="{{ instance.get_absolute_url }}"><img class="card-img-top" src="{{ instance.image.url }}"></a>
+      {% endif %}
+      <div class="image-overlay">
+		<div class="image-text">
+			<h3 class="title">{{ instance.title }}</h3>
+			<p class="card-text">{{ instance.description|truncatewords:6 }}</p>
+		</div>
+          <div class="image-icon">
+              <a href="{{ instance.get_absolute_url }}"><i class="fa fa-arrow-right"></i></a>
+          </div>
+      </div>
+  </article>
+</div>

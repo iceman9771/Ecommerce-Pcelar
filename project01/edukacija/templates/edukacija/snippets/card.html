@@ -1,0 +1,11 @@
+<div id="products" style="width: 20rem;">
+  <article class="work">
+			<h3 class="title">{{ instance.title }}</h3>
+			<p class="card-text">{{ instance.description|truncatewords:6 }}</p>
+
+          <div class="image-icon">
+              <a href="{{ instance.get_absolute_url }}"><i class="fa fa-arrow-right">  view</i></a>
+          </div>
+
+  </article>
+</div>
